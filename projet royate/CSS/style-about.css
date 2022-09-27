@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@500&family=Satisfy&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+   margin: 0;
+   padding:0;
+   box-sizing: border-box;
+}
+h2{
+    font-family: "Reem Kufi Fun", sans-serif;
+    color:#fafafa;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+h3{
+    font-family: "Satisfy display" ;
+    color:#ccaa7c;
+    font-size:30px;
+    text-transform: capitalize;
+}
+h2,h3{
+    text-align: center;
+}
+    
+/*header*/
+ 
+header {
+    background-image: url("../images/page-info-bg.jpg");
+    height: 550px;
+    width:100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.content{
+display: flex;
+justify-content: space-between;
+align-content: center;
+}
+.main-menu{
+   
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu{
+    position: fixed;
+    
+}
+
+ul{
+    display:flex; 
+    text-transform: uppercase;    
+}
+.main-menu nav ul li{
+    list-style-type: none; 
+    text-align: center;
+   
+}
+li{
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    color:#fafafa;
+    text-decoration: none;
+    margin-right:25px;
+   
+}
+a:hover{
+    color :#ccaa7c;
+    border: solid 1px #fafafa ; 
+}
+
+.icon{
+    margin-top:20px;
+    margin-right:40px;
+}
+.word{
+    text-transform: none;
+}
