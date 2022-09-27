@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+
 
 * {
     box-sizing: border-box;
 }
 body{
-    margin:auto;
-    padding: auto;
+    margin:0;
+    padding: 0;
     box-sizing: border-box;
-    max-width: 100%;
+ 
 }
 h2,h1{
     text-transform: uppercase;
@@ -20,19 +23,17 @@ h1{
 
 /* HEADER*/
 
+
 .container-header{
-    background-image: url("../images/slideshow-25.jpg");
-    height:1000px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #100910;    
 }
 .content{
+   
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-nav ul{
+header nav ul .menu-liste{
 
     display: flex;
     justify-content: space-between;
@@ -49,26 +50,48 @@ a{
 
 }
 a:hover{
-    border:solid 1px #fafafa;
+    border:solid 1px #9acfd3;
+    color:#9acfd3;
+}
+header nav input[type="checkbox"]{
+    display:none;
+}
+header nav .hamburger{
+    display:none;
 }
 .icon{
     margin:0 15px;
 }
-.container-section-00 {
+
+/* FIN HEADER */
+/****************************************************/
+/* SECTION 00 */
+.container-section-00{
+    background-image: url("../images/slideshow-25.jpg");
+    height:1000px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
-  
-    
-    
+    align-items: center;
+    justify-content: center;
+    position: relative;    
 }
 
 .title-above{
+    color:#fafafa; 
     display: flex;
-    
-
+  
 }
+.main-title{
+    color:#fafafa;
+  
+    text-align: center;
+}
+
 .main-subtitle h2{
-    
+    color:#9acfd3;
     text-transform: capitalize;
     font-size:30px;
 }
@@ -77,4 +100,62 @@ a:hover{
     
     width:220px;
     height:45px;
+}
+
+@media screen and (max-width:768px){
+
+    header nav ul .menu-liste{
+        display:none;
+        position:absolute;
+    flex-direction: column;
+    transition:all 0.4s ease;
+    text-align: end;
+    background-color: rgb(41, 41, 17);
+    right:0;
+    padding:20px 0;
+    }
+    header nav.hamburger{
+        display:block;
+        cursor:pointer;
+        color:#fafafa;
+        margin-right:50px;
+    }
+    header nav input[type="checkbox"]:checked ~ .menu-liste{
+        display:block;
+    }
+
+}
+
+/*FIN SECTION 00*/
+/**************************************************************/
+/* SECTION 01*/
+.section-01{
+    background-image: url("../images/about-us-bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover; 
+    min-height: 700px;  
+}
+.container-section-01{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.section-01-story {
+    max-width: 600px;
+    
+}
+.section-01-title{
+    font-family: "Satisfy";
+}
+.paragraph{
+    text-align: justify;
+}
+
+.photo1, .photo2{
+    position: absolute;
 }
